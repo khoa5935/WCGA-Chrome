@@ -1,0 +1,29 @@
+#colorContrastCheckerPanel {
+    box-shadow: rgba(50, 50, 50, 0.7) 0px 0px 5px !important;
+    overflow: auto !important;
+    background: rgb(255, 255, 255) !important;
+    border-style: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    z-index: 10000000000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    direction: ltr !important;
+}
+
+html[data-contrast-checker-eyedropper-active=true] body,
+html[data-contrast-checker-eyedropper-active=true] * {
+    cursor: crosshair !important;
+}
+
+html[data-contrast-checker-eyedropper-active=true] body iframe {
+    pointer-events: none !important;
+}
+
+*[data-colorChecker-highlight] {
+    box-shadow: 0 0 0 1px #F00, inset 0px 0px 0 1px rgba(255, 0, 0, 1);
+    outline: 2px #F00;
+}

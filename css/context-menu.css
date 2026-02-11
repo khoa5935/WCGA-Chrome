@@ -1,0 +1,96 @@
+.context-menu {
+    position: relative;
+    width: 25px;
+}
+
+.context-menu.main-menu,
+.context-menu.main-menu .menu-trigger {
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.context-menu ul {
+    margin: 10px 0;
+    padding: 5px 15px 5px 10px;
+    position: absolute;
+    z-index: 3000;
+    top: 90%;
+    border: 1px solid;
+    display: none;
+}
+
+.context-menu ul.active {
+    display: block;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, .5);
+    border-radius: 5px;
+}
+
+.context-menu .menu-item {
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    opacity: .7;
+    position: relative;
+}
+
+.context-menu .menu-item button {
+    line-height: 20px;
+    cursor: pointer;
+    padding: 3px 3px 3px 30px;
+    position: relative;
+    background-size: auto 70%;
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+}
+
+.context-menu .arrow {
+    display: none;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    z-index: 3001;
+    bottom: -10px;
+    left: 36%;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+}
+
+.context-menu.context-menu--open .arrow {
+    display: block;
+}
+
+.context-menu .menu-trigger:hover,
+.context-menu .menu-trigger:focus,
+.context-menu .menu-item button:hover,
+.context-menu .menu-item button:focus {
+    opacity: .9;
+}
+
+.context-menu .menu-item.menu-item--disabled button,
+.context-menu .menu-item.menu-item--disabled button:hover {
+    opacity: .3;
+    cursor: default;
+}
+
+.context-menu .menu-trigger {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    opacity: .6;
+    padding: 0;
+}

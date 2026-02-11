@@ -1,0 +1,93 @@
+<html>
+<head><title>Changelog</title></head>
+<body>
+<div class="flex-grid content" id="release_notes">
+    <div class="contents custom-scrollbar">
+        <dl>∫
+            <dt data-version="3.8.5">25/12/2025 (v 3.8.5)</dt>
+            <dd>Fixed the behavior related with the detection of the status (open vs collapsed) of the &lt;details&gt; element.</dd>
+            <dd>Fixed a bug related with retrieving the settings for the "level" and "Auto-refresh" selectors and showing the proper value.</dd>
+            <dd>General improvements in terms of performance.</dd>
+
+            <dt data-version="3.8.4">2/3/2024 (v 3.8.4)</dt>
+            <dd>Urgent fix related with the translations that made the extension fail to open.</dd>
+
+            <dt data-version="3.8.3">1/3/2024 (v 3.8.3)</dt>
+            <dd>Updated the way to select color from the page.</dd>
+            <dd>When expanding one row with multiple results, it remains open even when reloading results.</dd>
+            <dd>Small improvements in the styles.</dd>
+            <dd>Other minor changes and fixes.</dd>
+
+            <dt data-version="3.8.2">22/2/2024 (v 3.8.2)</dt>
+            <dd>Now the results from all documents are shown in the same table. This means that if there are iframes,
+                their contents are also evaluated and the results are shown in the same table with the rest of results.
+            </dd>
+            <dd>Improved the way in which the panel is shown, so the fixed elements in the page are identified and
+                prevented to be hidden behind it.
+            </dd>
+            <dd>Resizing the panel can be done with keyboard. The resizer bar is focusable, and it is in the natural
+                keyboard order. When it has the focus, the arrow keys resize the panel.
+            </dd>
+
+            <dt data-version="3.7.2">3/3/2023 (v 3.7.2)</dt>
+            <dd>Updated the way in which it can be kept open.</dd>
+
+            <dt data-version="3.7.1">29/3/2023 (v 3.7.1)</dt>
+            <dd>Improved the way in which the panel takes space from the body when opening and resizing.</dd>
+
+            <dt data-version="3.7.0">18/3/2023 (v 3.7.0)</dt>
+            <dd>There is a new the option to open the extension automatically. It can be set to open it always or only
+                in the domain of the page that is active. The way to use it is by a menu (with the "pin" icon) included
+                in the top bar and that includes both options that is open by using the "pin" icon button.</dd>
+            <dd>The button to switch the position of the panel is now available in the main bar.</dd>
+            <dd>It includes some code changes that, although not directly impacting in the user experience, improve the maintainability of the extension.</dd>
+
+            <dt data-version="3.6.2">26/2/2023 (v 3.6.2)</dt>
+            <dd>Fixed the bug that blocked the creation of the panel and normal execution when there were iframes with
+                lazy-load.
+            </dd>
+            <dd>Fixed the bug that made the extension fail when there is no body in the page but frameset.</dd>
+
+            <dt data-version="3.6.1">5/7/2022 (v 3.6.1)</dt>
+
+            <dd>Updated to use shadow DOM</dd>
+
+            <dd>The dialog with the help was updated (style and content)</dd>
+            <dt data-version="3.6.0">21/6/2022 (v 3.6.0)</dt>
+            <dd>Added an option to flip the panel position between left and right</dd>
+            <dd>Fixed bug in the color picker (there was no option to select color from the page in Firefox)</dd>
+
+            <dt data-version="3.5.6">29/10/2020 (v 3.5.6)</dt>
+            <dd>Quick fix on the estimation of the visibility of the elements</dd>
+
+            <dt data-version="3.5.5">28/10/2020 (v 3.5.5)</dt>
+            <dd>Improve the way in which the colors are identified when elements use opacity property or alpha channel
+                in the color declarations for foreground and background
+            </dd>
+            <dd>Exclude images alternative text from the analysis. So far, the images were considered as elements that
+                can have text because when they are not loaded, the alternative text is shown.
+            </dd>
+
+            <dt data-version="3.5.4">5/7/2020 (v 3.5.4)</dt>
+            <dd>Changes in the way the algorithm accesses information on each element in the DOM, so that analysis
+                performance and time to display results are improved
+            </dd>
+
+            <dt data-version="3.5.3">25/6/2020 (v 3.5.3)</dt>
+            <dd>Fix bug that affected the performance when opening the panel</dd>
+
+            <dt data-version="3.5.2">14/6/2020 (v 3.5.2)</dt>
+            <dd>Visible and hidden elements are shown in the same table</dd>
+            <dd>Performance improvements</dd>
+            <dd>When the option for auto-refresh is deactivated, the button for executing the analysis shows a warning
+                icon when the tool detects changes in the DOM
+            </dd>
+            <dd>Add help and release notes dialogs</dd>
+            <dd>Add menu</dd>
+            <dd>Layout changes</dd>
+        </dl>
+        <p class="note">Older content of the release notes is not included here. </p>
+    </div>
+</div>
+</body>
+</html>

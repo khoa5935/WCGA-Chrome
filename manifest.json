@@ -1,0 +1,36 @@
+{
+   "action": {
+      "default_icon": {
+         "32": "icons/icon_overlay.png"
+      },
+      "default_title": "WCAG by khoaofgod"
+   },
+   "author": "khoaofgod",
+   "background": {
+      "service_worker": "service-worker.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/inDocumentStyles.css" ],
+      "js": [ "content_scripts/contrastChecker.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extensionDescription__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/icon128_with_margin.png",
+      "48": "icons/icon_large.png",
+      "96": "icons/icon_large_96x96.png"
+   },
+   "manifest_version": 3,
+   "name": "__MSG_extensionName__",
+   "permissions": [ "activeTab", "storage", "webNavigation" ],
+   "version": "3.8.5",
+   "web_accessible_resources": [ {
+      "extension_ids": [  ],
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "html/*", "css/*", "getFrameId", "_locales/*" ]
+   } ]
+}

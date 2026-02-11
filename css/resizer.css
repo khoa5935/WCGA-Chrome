@@ -1,0 +1,26 @@
+.extension-panel-resizer {
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 100000000;
+    background-color: #D0D0D0;
+}
+
+.extension-panel-resizer:before {
+    position: absolute;
+    border-left: 1px dotted #000000;
+    border-right: 1px dotted #000000;
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    opacity: .6;
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    cursor: col-resize;
+}

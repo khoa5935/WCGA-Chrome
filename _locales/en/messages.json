@@ -1,0 +1,10 @@
+{
+   "extensionDescription": {
+      "description": "Description of the extension.",
+      "message": "To check the color contrast between foreground and background of the texts"
+   },
+   "extensionName": {
+      "description": "Name of the extension.",
+      "message": "WCAG by khoaofgod"
+   }
+}

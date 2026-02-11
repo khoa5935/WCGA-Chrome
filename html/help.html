@@ -1,0 +1,61 @@
+<html>
+<head><title>Help and Info</title></head>
+<body>
+<div class="flex-grid content" id="help_panel">
+    <div class="contents custom-scrollbar">
+        <p>WCAG Contrast Checker is a browser extension that analyses the <strong>color contrast between foreground and
+            background of all elements</strong> in the page.</p>
+        <p>The tool can also analyse the color contrast of documents included with iframes. For accessing to their
+            results, it includes a document selector that switches between all the HTML documents.</p>
+        <p>The extension does not analyse the color of the images. If the element is an image, the detected color for
+            the foreground is the one that its alternative text would use, and if the element includes and image as
+            background, the background color is the one that it has defined without considering the image.</p>
+
+        <h3>Visible and Hidden elements</h3>
+        <p>The tool identifies the elements that use common techniques to hide content (for collapsible elements,
+            fly-outs, menus, etc.). Those elements are not evaluated.</p>
+
+        <h3>Color blindness selector</h3>
+        <p>By choosing one of the color blindness options, the colors in the page will emulate that visual condition and
+            the color contrast is reevaluated according to it.</p>
+
+        <h3>Auto-refresh (refresh on DOM updates)</h3>
+        <p>The analysis can be performed to be executed on every DOM modification (additions or removal of DOM elements,
+            as well as on changes of class values). Although this feature gives better feedback when the page updates
+            content without reload, it can also impact in the general performance.</p>
+
+        <h3>Manual color analysis</h3>
+        <p>The extension includes a color analyser that allows to introduce a color combination to evaluate its
+            contrast.</p>
+
+        <h3>Color contrast in WCAG (Web Content Accessibility Guidelines)</h3>
+        <p>WCAG define two levels of compliance that differ only in the contrast ratio:</p>
+        <ul>
+            <li><strong>Level AA</strong>:
+                <ul>
+                    <li>4.5:1 for normal text</li>
+                    <li>3:1 for large text</li>
+                    <li>3:1 for graphics and user interface components (such as form input borders)</li>
+                </ul>
+            </li>
+            <li><strong>Level AAA</strong>:
+                <ul>
+                    <li>7:1 for normal text</li>
+                    <li>4.5:1 for large text</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>Large text is defined as 14 point (typically 18.66px, or 1.2rem when the root font is 16px) and bold or
+            larger, or 18 point (typically 24px or 1.5rem) or larger.</p>
+
+        <h4>References</h4>
+        <ul>
+            <li><a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">Success Criterion 1.4.3 Contrast (Minimum)</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG22/#contrast-enhanced">Success Criterion 1.4.6 Contrast (Enhanced)</a>
+            <li><a href="https://www.w3.org/TR/WCAG22/#non-text-contrast">Success Criterion 1.4.11 Non-text Contrast</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

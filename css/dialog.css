@@ -1,0 +1,162 @@
+#dialog-panel {
+    position: fixed;
+    top: 5%;
+    width: 80%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    overscroll-behavior: none;
+    left: calc(50% - min(40%, 400px));
+    box-sizing: border-box;
+    border: 1px solid;
+    padding: 0;
+    z-index: 100000001;
+    box-shadow: 0 0 5px rgba(50, 50, 50, .7) !important;
+    opacity: 0;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+#dialog-panel .dialog-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    transition: background-color .25s ease-out;
+}
+
+#dialog-panel.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#dialog-panel.active .dialog-backdrop {
+    background: rgba(0, 0, 0, .7);
+    pointer-events: auto;
+}
+
+.dialog-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    background: red;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-title {
+    border-bottom: 1px dotted;
+}
+
+.dialog-title::first-letter {
+    text-transform: capitalize;
+}
+
+.dialog-closer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    opacity: .6;
+    padding: 0;
+}
+
+.dialog-closer:hover,
+.dialog-closer:focus {
+    opacity: .9;
+}
+
+.dialog-content {
+    flex-grow: 2;
+    height: calc(100% - 40px);
+    padding: 10px 30px;
+    overflow: auto;
+    overscroll-behavior: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.dialog-actions {
+    z-index: 1000;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.dialog-action {
+    width: 170px;
+    min-height: 30px;
+}
+
+.dialog-content dt,
+.dialog-content dd,
+.dialog-content p,
+.dialog-content li {
+    line-height: 1.5;
+}
+
+.dialog-content dd {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.dialog-content p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dialog-content ul {
+    margin-right: 10px;
+}
+
+#dialog-panel h1 {
+    margin: 0;
+    padding: 10px 45px 10px 10px;
+    min-height: 25px;
+    font-size: max(1.2rem, 19px);
+}
+
+#dialog-panel h1:focus {
+    outline: none;
+}
+
+#dialog-panel h2 {
+    margin: 0;
+    border-bottom: 1px dotted;
+    font-size: 1.1em;
+}
+
+/* Themes */
+#dialog-panel,
+#dialog-panel a {
+    color: #333;
+}
+
+.dialog-content-wrapper {
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+.dialog-closer {
+    background-image: url(./icons/close.png);
+}
